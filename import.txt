@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class employee {
+    Scanner sc= new Scanner(System.in)
+    string fname;
+    string lname;
+    float salary;
+  public employee(){
+    fname="";
+    lname="";
+    salary="";
+  }
+  void setdata(){
+    System.out.print("enter the first name : ")
+    fname=sc.nextline();
+    System.out.print("enter the last name : ")
+    lname=sc.nextline();
+    System.out.print("enter the salary : ")
+    salary=sc.nextline();
+    System.out.print("name is : "+fname+" "+lname+"\n"+"salary is : "+salary);
+  }
+  public static void main(string[] args){
+    employee a =new employee();
+    a.setdata();
+  }
+}
